@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".ui.RecipeDetailsActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:id="@+id/laoyoutfor"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+    <!-- A small divider -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- LinearLayout that arranges all three Android-Me body part images vertically -->
+        <LinearLayout
+            android:id="@+id/step_details_video_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/detail_step_video"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:id="@+id/detail_step_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/darker_gray"
+                android:src="@drawable/download" />
+
+            <TextView
+                android:id="@+id/step_description"
+                style="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

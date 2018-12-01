@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="appwidget_text">RECIPES</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_view_text">No Recipes!</string>
+    <string name="widget_ingredients_title">Ingredients of %s</string>
+</resources>
